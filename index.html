@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo tecnm.png" type="image/png">
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/5149de0ccb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos ITI</title>
+</head>
+<body>
+    <div class="fondo-login">
+        <div class="main-bar">
+            <nav>
+                <h1>Pagos ITI</h1>
+                <div class="logo-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="login-container">
+            <div class="header-login">
+                <h2>Iniciar Sesión</h2>
+            </div>
+            <form action="/login" method="post" id="loginForm">
+                <div class="input-email">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" id="username" name="username" required placeholder="Usuario o email">
+                </div>
+                <div class="input-password">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" name="password" required placeholder="Contraseña">
+                </div>
+                <div class="recordar">
+                    <input type="checkbox" id="recordar" name="recordar">
+                    <label class="recordar" id="recordarLabel" for="recordar">Recordar mi sesión</label>
+                </div> 
+                <div class="opciones">
+                    <a href="">OLVIDE MI CONTRASEÑA </a>
+                    <button type="submit" id="aceptar">ACEPTAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+   <script src="login.js"></script>
+</body>
+</html>
