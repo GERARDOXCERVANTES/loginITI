@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="logo tecnm.png" type="image/png">
+    <link rel="icon" href="{{url_for('static', filename = 'img/logo tecnm.png')}}" type="image/png">
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/5149de0ccb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Style.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagos ITI</title>
 </head>
@@ -42,6 +42,6 @@
             </form>
         </div>
     </div>
-   <script src="login.js"></script>
+   <script src="{{url_for('static',filename='js/validacion.js')}}"></script>
 </body>
 </html>

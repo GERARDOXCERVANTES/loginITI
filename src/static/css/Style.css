@@ -28,7 +28,7 @@ body{
     background:linear-gradient(60deg, rgb(26, 57, 104), rgb(26, 57, 104));
 }
 .fondo-login{
-    background-image: url('image.png');
+    background-image: url('../img/image.png');
     background-size: cover;
     background-position:top center ;
     min-height: 100vh;
@@ -134,10 +134,7 @@ h2{
     }
 }
 
-.login-container input[type="text"]:focus,
-.login-container input[type="password"]:focus {
-    border-bottom: 2px solid red;
-}
+
 
 .login-container i{
     position: absolute;
