@@ -5,7 +5,7 @@ from .entities.user import User
 class ModelUser:
 
     @classmethod
-    def login(cls,db,user):
+    def login(cls,db,user):#verifica el usuario para el login
         try:
             db.connect() 
             cursor = db.get_cursor()
@@ -21,7 +21,7 @@ class ModelUser:
         finally:
             db.close_all()
         
-    @classmethod
+    @classmethod# busca un usuario por su id
     def by_id(cls, db, get_id):
         try:
             db.connect() 
@@ -30,7 +30,7 @@ class ModelUser:
             cursor.execute(query, (get_id,))
             row = cursor.fetchone()
             if row != None:
-                return User(row[0],None)
+                return User(row[0],None)#contraseña no se envia por seguridad
             else:
                 return None
         except Exception as e:

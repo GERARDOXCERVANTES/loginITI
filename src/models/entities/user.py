@@ -7,8 +7,8 @@ class User(UserMixin):
     password: str
     
     def get_id(self):
-        return self.no_control  # de usermixin es requerido para indentificar al usuario
+        return self.no_control  # de usermixin es requerido para indentificar al usuario logiado
     
     @staticmethod
-    def check_password(hash_password,password):
+    def check_password(hash_password,password):#desencriptar la contraseña 
         return check_password_hash(hash_password,password)
